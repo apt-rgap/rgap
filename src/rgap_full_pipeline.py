@@ -1,4 +1,5 @@
 """
+Last version: Feb 2026.
 RGAP: Rule-Gated Attention Priors for Unsupervised APT Detection
 ================================================================
 Single-file implementation integrating:
