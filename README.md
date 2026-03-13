@@ -109,7 +109,8 @@ This produces:
 
 ---
 
-## Quick Start from rgap_full_pipeline.py (https://github.com/apt-rgap/rgap/blob/main/src/rgap_full_pipeline.py) 
+## Quick Start [Check out the main pipeline file here!](https://github.com/apt-rgap/rgap/blob/main/src/rgap_full_pipeline.py)
+
 
 ```python
 
