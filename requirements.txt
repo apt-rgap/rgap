@@ -1,0 +1,13 @@
+# PyTorch and PyTorch Geometric
+torch>=2.0.0
+torch-geometric>=2.3.0
+
+# Data processing and numerical libraries
+numpy>=1.22.0
+pandas>=1.4.0
+
+# Machine learning tools
+scikit-learn>=1.0.2
+
+# Association rule mining
+mlxtend>=0.22.0
