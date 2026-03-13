@@ -96,37 +96,31 @@ pip install -r requirements.txt
 
 RGAP is evaluated on the [DARPA Transparent Computing (TC)](https://www.darpa.mil/program/transparent-computing) dataset. Raw logs must be obtained from DARPA directly.
 
-Once you have the raw CDM JSON logs, preprocess with:
+Link to download the data:
 
 ```bash
-python preprocess/darpa_tc_to_matrix.py \
-    --input  /path/to/cdm_logs/ \
-    --output data/linux_s1/ \
-    --window 300 \
-    --overlap 0.5
+https://gitlab.com/adaptdata
 ```
 
 This produces:
-- `X_binary.csv` — binary process–action matrix
-- `P_parent.csv` — process-parent matrix
-- `labels.csv`  — ground-truth labels (used only for evaluation)
+- `ProcessEvent.csv` — binary process–action matrix
+- `ProcessParent.csv` — process-parent matrix
+- `GroundTruth.csv`  — ground-truth labels (used only for evaluation)
 
 ---
 
-## Quick Start
+## Quick Start from rgap_full_pipeline.py o
 
 ```python
-from rgap_pipeline import run_rgap
 
-results = run_rgap(
-    x_csv     = "data/linux_s1/X_binary.csv",
-    p_csv     = "data/linux_s1/P_parent.csv",
-    label_csv = "data/linux_s1/labels.csv",
-)
+input_csv  = "../5dir/ProcessEvent.csv"
+gt_csv     ="../5dir/5dir_bovia_simple.csv"
+parent_csv ="../5dir/ProcessParent.csv"
 
-print(f"AUC-ROC : {results['auc']:.3f}")
-print(f"nDCG@100: {results['ndcg']:.3f}")
-print(f"Best F1 : {results['f1']:.3f}")
+print("\nTop 20 ranked processes:")
+print(df_rank.head(20))
+print("\nMetrics:")
+print(metrics)
 ```
 
 ### Key hyperparameters
@@ -170,7 +164,7 @@ src/
 
 ## Explainability Example
 
-For each flagged process, RGAP reports the rule evidence that most influenced the decision:
+For each flagged process, RGAP reports the rule evidence that most influenced the decision.
 
 ```
 Process: nginx:4821   score: 0.91
