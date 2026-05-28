@@ -1,6 +1,6 @@
 # RGAP: Rule-Gated Attention Priors for Unsupervised APT Detection
 
-> **ECML PKDD 2026** | [Paper](#) | [Code](https://github.com/apt-rgap/rgap)
+> **IEEE ICDM 2026** | [Paper](#) | [Code](https://github.com/apt-rgap/rgap)
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org)
@@ -184,7 +184,7 @@ Gate values directly indicate which symbolic patterns the model trusted — prov
 ```bibtex
 @inproceedings{rgap2026,
   title     = {{RGAP}: Rule-Gated Attention Priors for Unsupervised {APT} Detection on Provenance Graphs},
-  booktitle = {Machine Learning and Knowledge Discovery in Databases (ECML PKDD)},
+  booktitle = {IEEE ICDM},
   year      = {2026},
 }
 ```
