@@ -71,14 +71,12 @@ Top-ranked processes are explained by reporting the **highest-gate rule edges** 
 
 ## Results (DARPA TC — nDCG | AUC-ROC)
 
-| Method | BSD S1 | BSD S2 | Linux S1 | Linux S2 | Win S1 | Win S2 | Android S1 | Android S2 |
-|---|---|---|---|---|---|---|---|---|
-| WATSON | 0.52\|0.87 | 0.77\|**0.99** | 0.25\|0.82 | 0.41\|0.92 | 0.66\|0.97 | 0.25\|0.43 | 0.85\|0.87 | 0.42\|0.74 |
-| MAGIC | 0.29\|0.82 | 0.30\|0.93 | 0.24\|0.74 | 0.42\|0.93 | 0.32\|0.95 | 0.30\|0.74 | 0.87\|0.88 | 0.39\|0.64 |
-| ProvDetector | 0.44\|0.88 | 0.33\|0.93 | 0.25\|0.80 | 0.41\|0.93 | 0.64\|0.98 | 0.27\|0.69 | 0.86\|0.89 | 0.42\|0.75 |
-| **RGAP (ours)** | **0.55\|0.91** | **0.81**\|0.97 | **0.53\|0.83** | **0.47\|0.90** | **0.68\|0.98** | **0.56\|0.83** | **0.89\|0.91** | **0.63\|0.86** |
 
-Average: **nDCG 0.64 · AUC-ROC 0.89** across all 8 scenarios.
+![Results](https://github.com/apt-rgap/rgap/blob/main/figures/rgapResults.png)
+
+![Parameters](https://github.com/apt-rgap/rgap/blob/main/figures/grapSensitivity.png)
+
+
 
 ---
 
