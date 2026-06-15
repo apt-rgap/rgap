@@ -126,20 +126,8 @@ print(metrics)
 
 ### Key hyperparameters
 
-| Parameter | Default | Description |
-|---|---|---|
-| `sigma_r` | 0.01 | Rare-rule max support (% of N) |
-| `sigma_f` | 0.10 | Frequent-rule min support (% of N) |
-| `tau_c` | 0.60 | Min confidence for rare rules |
-| `tau_l` | 1.50 | Min lift for rare rules |
-| `d` | 128 | Hidden embedding dimension |
-| `heads` | 4 | Number of attention heads |
-| `lr` | 1e-3 | Adam learning rate |
-| `epochs` | 100 | Training epochs |
-| `lambda` | 0.1 | Contrastive loss weight |
-| `p_mask` | 0.3 | FAM masking probability |
-| `lambda_recon` | 0.6 | Reconstruction score weight |
-| `lambda_emb` | 0.4 | Embedding score weight |
+![Sensitivity](https://github.com/apt-rgap/rgap/blob/main/figures/rgapParameters.png)
+
 
 ---
 
