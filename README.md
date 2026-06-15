@@ -8,6 +8,8 @@
 
 RGAP is a **neuro-symbolic graph attention model** for unsupervised Advanced Persistent Threat (APT) detection on provenance graphs. It bridges symbolic rule mining and graph neural networks by injecting association-rule evidence directly into the GNN attention mechanism through a learnable per-edge gate — without requiring any attack labels during training.
 
+![RGAP]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/apt-rgap/rgap/blob/main/figures/rgapPipeline.png))
+
 ---
 
 ## How It Works
